@@ -292,7 +292,7 @@ body {
 .container {
   width: 1158px;
   padding: 0 15px 0 15px;
-  margin: auto;
+  margin: 0 auto;
 }
 .header {
   border-bottom: 1px solid var(--accent);
