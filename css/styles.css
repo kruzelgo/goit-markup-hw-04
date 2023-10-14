@@ -193,16 +193,35 @@ body {
   padding-bottom: 120px;
 }
 .section-customers {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding: 120px 0 120px;
 }
 .customers-list {
   display: flex;
   gap: 24px;
+  list-style: none;
 }
 .customer-logo {
   width: calc((100% - 120px) / 6);
   height: 88px;
+}
+.customer-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--subtle-text);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--pressed-state);
+  color: var(--pressed-state);
+}
+.customer-icon {
+  fill: currentColor;
 }
 .section-heading {
   padding: 188px 0;
@@ -238,6 +257,26 @@ body {
 .social-media-icon {
   width: 40px;
   height: 40px;
+  list-style: none;
+}
+.social-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--pressed-state);
+}
+.sm-icon-style {
+  fill: var(--light);
 }
 .address {
   font-style: normal;
